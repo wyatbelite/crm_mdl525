@@ -49,32 +49,32 @@
 
     <section id="about">
 
-      <div class="container mt-5">
+      <div class="container mt-5 mb-5">
       <div class="card-deck">
     <div class="card" style="width: 18rem;">
-  <img src="assets-template/img/1.png" class="card-img-top" alt="...">
+  <img src="assets-template/img/4.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">Bumbu tabur kemasa lebih besar.</p>
   </div>
 </div>
 
     <div class="card" style="width: 18rem;">
-  <img src="assets-template/img/1.png" class="card-img-top" alt="...">
+  <img src="assets-template/img/2.JPG" class="card-img-top" alt="...">
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">Bumbu tabur kemasan Ekonomis.</p>
   </div>
 </div>
 
     <div class="card" style="width: 18rem;">
-  <img src="assets-template/img/1.png" class="card-img-top" alt="...">
+  <img src="assets-template/img/3.JPG" class="card-img-top" alt="...">
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">Tepung cabe.</p>
   </div>
 </div>
 </div>
 </div>
 </section>
-        
+<br>       
 
 <!-- Optional JavaScript; choose one of the two! -->
 
