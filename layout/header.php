@@ -51,7 +51,7 @@ include 'config/app.php';
             <!-- Brand Logo -->
             <a href="dasboard.php" class="brand-link">
                 <!-- <img src="assets-template/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
-                <span class="brand-text font-weight-light">AMDK PDAM <small>Kota Bandung</small></span>
+                <span class="brand-text font-weight-light">  MDL-525 </span>
             </a>
 
             <!-- Sidebar -->

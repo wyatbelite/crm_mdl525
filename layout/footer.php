@@ -1,6 +1,6 @@
 <!-- /.content-wrapper -->
 <footer class="main-footer">
-    <strong>Copyright &copy; AMDK PDAM Kota Bandung</strong>
+    <strong>Copyright &copy; MDL-525</strong>
 </footer>
 
 <!-- Control Sidebar -->

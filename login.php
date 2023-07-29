@@ -111,7 +111,7 @@ if (isset($_POST['login'])) {
 
                 <hr>
                 <p class="mb-1 text-center">
-                    <span class="mt-5 mb-3 text-muted">Copyright &copy; AMDK PDAM Kota Bandung <?= date('Y') ?>
+                    <span class="mt-5 mb-3 text-muted">Copyright &copy; MDL-525 <?= date('Y') ?>
                     </span>
                 </p>
             </div>
