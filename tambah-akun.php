@@ -83,8 +83,8 @@ if (isset($_POST['tambah'])) {
                     <!-- <input type="text" class="form-control" id="username" name="username" placeholder="Username..." required> -->
                     <select name="level" id="level" class="form-control" required>
                             <option value="">-- pilih level --</option>
-                            <option value="1">Operator Pemasaran</option>
-                            <option value="2">Operator Penjualan</option>
+                            <option value="1">Marketing</option>
+                            <option value="2">Pelanggan</option>
                     </select>
                 </div>
 
