@@ -39,14 +39,12 @@ if (isset($_POST['tambah'])) {
     <!-- Theme style -->
     <link rel="stylesheet" href="assets-template/dist/css/adminlte.min.css">
     <!-- Favicons -->
-    <link rel="icon" href="assets-template/img/logo2.png">
 </head>
 
     <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
             <div class="text-center">
-                <img class="mb-4" src="assets-template/img/logo2.png" alt="" width="65" height="100">
                 <a href="#"><b>Registrasi</b></a>
             </div>
         </div>

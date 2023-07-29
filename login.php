@@ -54,15 +54,12 @@ if (isset($_POST['login'])) {
     <link rel="stylesheet" href="assets-template/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="assets-template/dist/css/adminlte.min.css">
-    <!-- Favicons -->
-    <link rel="icon" href="assets-template/img/logo2.png">
 </head>
 
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
             <div class="text-center">
-                <img class="mb-4" src="assets-template/img/logo2.png" alt="" width="65" height="100">
                 <a href="#"><b>LOGIN</b></a>
             </div>
         </div>
