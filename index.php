@@ -14,7 +14,7 @@
   <body id="home">
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php">AMDK PDAM Kota Bandung</a>
+  <a class="navbar-brand" href="index.php">MDL-525</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -66,12 +66,12 @@
       <div class="container mt-5">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>AMDK PDAM Kota Bandung</h2>
+            <h2>MDL-525</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-6">
-            <p>AMDK PDAM Kota Bandung merupakan salah satu anak perusahaan Perumda PDAM Tirtawening. Perusahaan ini memproduksi air minum dengan jenis Mineral dengan merk Hanaang dan jenis RO (Reverse Osmosis) dengan merk Watermed dan Pendopo</p>
+            <p>PT. MDL-525 merupakan salah satu perusahaan milik swasta yang berdomisili di Kabupaten Garut, yang berdiri pada tahun 1976. PT. MDL-525 berusaha dibidang produksi saos dan kembang tahu. Pada tahun 2008 Perusahaan tersebut memproduksi penyedap rasa (bumbu tabur)</p>
       </div>
     </section>
     <!-- Akhir About -->
@@ -113,7 +113,7 @@
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center pb-3 pt-3 mt-4">
-    <strong>Copyright &copy; AMDK PDAM Kota Bandung</strong>
+    <strong>Copyright &copy; MDL-525</strong>
     </footer>
     <!-- Akhir Footer -->
 
