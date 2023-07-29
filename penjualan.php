@@ -53,7 +53,7 @@ $data_penjualan = select("SELECT * FROM tb_penjualan ORDER BY id_penjualan DESC"
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                <?php if ($_SESSION['level'] == 2) : ?>
+                <?php if ($_SESSION['level'] == 1) : ?>
                     <a href="tambah-penjualan.php" class="btn btn-primary btn-sm mb-2"><i class="fas fa-plus"></i> Tambah</a>
                 <?php endif; ?>
 
@@ -74,7 +74,7 @@ $data_penjualan = select("SELECT * FROM tb_penjualan ORDER BY id_penjualan DESC"
                                     <td>Rp. <?= $penjualan['penjualan']; ?></td>
                                     <td width="20%" class="text-center">
 
-                                    <?php if ($_SESSION['level'] == 2) : ?>
+                                    <?php if ($_SESSION['level'] == 1) : ?>
                                         <a href="ubah-penjualan.php?id_penjualan=<?= $penjualan['id_penjualan']; ?>" class="btn btn-success"><i class="fas fa-edit"></i> Ubah</a>
 
                                         <a href="hapus-penjualan.php?id_penjualan=<?= $penjualan['id_penjualan']; ?>" class="btn btn-danger" onclick="return confirm('Yakin Data Penjualan Akan Dihapus.?');"><i class="fas fa-trash-alt"></i> Hapus</a>

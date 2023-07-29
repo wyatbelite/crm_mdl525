@@ -171,9 +171,9 @@ function create_promosi($post)
 
     $periklanan             = strip_tags($post['periklanan']);
     $pemasaran_langsung     = strip_tags($post['pemasaran_langsung']);
-    $penjualan_personal     = strip_tags($post['penjualan_personal']);
+    
     // query tambah data
-    $query = "INSERT INTO tb_promosi VALUES(null, '$periklanan', '$pemasaran_langsung', '$penjualan_personal')";
+    $query = "INSERT INTO tb_promosi VALUES(null, '$periklanan', '$pemasaran_langsung')";
 
     mysqli_query($db, $query);
 
@@ -188,10 +188,10 @@ function update_promosi($post)
     $id_promosi         = strip_tags($post['id_promosi']);
     $periklanan             = strip_tags($post['periklanan']);
     $pemasaran_langsung     = strip_tags($post['pemasaran_langsung']);
-    $penjualan_personal     = strip_tags($post['penjualan_personal']);
+   
 
     // query ubah data
-    $query = "UPDATE tb_Promosi SET periklanan = '$periklanan', pemasaran_langsung = '$pemasaran_langsung', penjualan_personal = '$penjualan_personal' WHERE id_promosi = $id_promosi";
+    $query = "UPDATE tb_promosi SET periklanan = '$periklanan', pemasaran_langsung = '$pemasaran_langsung' WHERE id_promosi = $id_promosi";
 
     mysqli_query($db, $query);
 

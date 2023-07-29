@@ -47,43 +47,40 @@
     </section>
     <!-- Akhir About -->
 
-        <!-- Contact -->
-        <hr></hr>
-        <tr></tr>
-        <section id="contact">
-      <div class="container-sm">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Kritik & Saran</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4">
-            <form>
-              <div class="mb-3">
-                <label for="id_pelanggan" class="form-label">ID Pelanggan</label>
-                <input type="text" class="form-control" id="id_pelanggan" aria-describedby="id_pelanggan" />
-              </div>
-              <div class="mb-3">
-                <label for="kritik" class="form-label">Kritik</label>
-                <textarea class="form-control" id="kritik" rows="3"></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="saran" class="form-label">Saran</label>
-                <textarea class="form-control" id="saran" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Contact -->
+    <section id="about">
+
+      <div class="container mt-5">
+      <div class="card-deck">
+    <div class="card" style="width: 18rem;">
+  <img src="assets-template/img/1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+    <div class="card" style="width: 18rem;">
+  <img src="assets-template/img/1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+    <div class="card" style="width: 18rem;">
+  <img src="assets-template/img/1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+</div>
+</div>
+</section>
+        
 
 <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center pb-3 pt-3 mt-4">
+    <footer class="bg-primary text-white text-center pb-3 pt-3 mt-4 fixed-bottom">
+
     <strong>Copyright &copy; MDL-525</strong>
     </footer>
     <!-- Akhir Footer -->

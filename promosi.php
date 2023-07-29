@@ -25,7 +25,7 @@ $title = 'Daftar Promosi';
 include 'layout/header.php';
 
 // menampilkan data promosi
-$data_promosi = select("SELECT periklanan, pemasaran_langsung, penjualan_personal, penjualan FROM tb_promosi INNER JOIN tb_penjualan ON tb_promosi.id_penjualan = tb_penjualan.id_penjualan");
+$data_promosi = select("SELECT id_promosi, periklanan, pemasaran_langsung, penjualan FROM tb_promosi INNER JOIN tb_penjualan ON tb_promosi.id_penjualan = tb_penjualan.id_penjualan");
 
 ?>
 
@@ -81,7 +81,7 @@ echo "<pre>$output</pre>";
                                 <th>No</th>
                                 <th>Periklanan</th>
                                 <th>Pemasaran Langsung</th>
-                                <th>Penjualan Personal</th>
+                               
                                 <th>Penjualan</th>
                                 <th>Aksi</th>
                             </tr>
@@ -94,12 +94,14 @@ echo "<pre>$output</pre>";
                                     <td><?= $no++; ?></td>
                                     <td><?= $promosi['periklanan']; ?></td>
                                     <td><?= $promosi['pemasaran_langsung']; ?></td>
-                                    <td><?= $promosi['penjualan_personal']; ?></td>
                                     <td><?= $promosi['penjualan']; ?></td>
                                     <td class="text-center" width="20%">
-                                        <!-- <a href="ubah-promosi.php?id_promosi=<?= $promosi['id_promosi']; ?>" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Ubah</a>
 
-                                        <a href="hapus-promosi.php?id_promosi=<?= $promosi['id_promosi']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Data Promosi Akan Dihapus.?');"><i class="fas fa-trash-alt"></i> Hapus</a> -->
+                                        <a href="ubah-promosi.php?id_promosi=<?= $promosi['id_promosi']; ?>" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Ubah</a>
+
+                                       
+                                        <!-- <a href="hapus-promosi.php?id_promosi=<?= $promosi['id_promosi']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Data Promosi Akan Dihapus.?');"><i class="fas fa-trash-alt"></i> Hapus</a> -->
+                                        
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
