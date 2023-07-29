@@ -13,7 +13,7 @@ conn = pymysql.connect(
 )
 
 # Baca data dari tabel di database
-query = "SELECT periklanan, pemasaran_langsung, penjualan_personal, penjualan FROM tb_promosi INNER JOIN tb_penjualan ON tb_promosi.id_penjualan = tb_penjualan.id_penjualan"
+query = "SELECT periklanan, pemasaran_langsung, penjualan FROM tb_promosi INNER JOIN tb_penjualan ON tb_promosi.id_penjualan = tb_penjualan.id_penjualan"
 data = pd.read_sql(query, conn)
 
 # Membersihkan data
@@ -24,7 +24,7 @@ data['penjualan'] = data['penjualan'].astype(float)
 
 # Variabel tetap (y) dan variabel bebas (x1, x2, x3)
 y = data['penjualan'].values
-X = data[['periklanan', 'pemasaran_langsung', 'penjualan_personal']].values
+X = data[['periklanan', 'pemasaran_langsung']].values
 
 
 # Tambahkan kolom konstanta pada variabel bebas
@@ -42,7 +42,7 @@ coefficients = result.params
 #print(coefficients)
 
 # Korelasi
-correlation_matrix = data[['penjualan', 'periklanan', 'pemasaran_langsung', 'penjualan_personal']].corr()
+correlation_matrix = data[['penjualan', 'periklanan', 'pemasaran_langsung']].corr()
 #print("Korelasi:")
 #print(correlation_matrix)
 
@@ -69,7 +69,7 @@ t_pvalues = result.pvalues
 
 # Hasil
 thitung = t_values
-ttabel = 2.776
+ttabel = 2.571
 signifikansi = t_pvalues
 
 def jadikan_ttabel_negatif(ttabel, thitung):
@@ -91,9 +91,6 @@ ttabel_pemasaran_langsung = jadikan_ttabel_negatif(ttabel, thitung[2])
 hasil_uji_pemasaran_langsung = uji_pengaruh(thitung[2], ttabel_pemasaran_langsung, signifikansi[2])
 print("Pengaruh pemasaran langsung terhadap volume penjualan:", hasil_uji_pemasaran_langsung)
 
-ttabel_penjualan_personal = jadikan_ttabel_negatif(ttabel, thitung[3])
-hasil_uji_penjualan_personal = uji_pengaruh(thitung[3], ttabel_penjualan_personal, signifikansi[3])
-print("Pengaruh penjualan personal terhadap volume penjualan:", hasil_uji_penjualan_personal)
 
 # Menutup koneksi database
 conn.close()

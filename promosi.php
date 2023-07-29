@@ -51,7 +51,7 @@ $data_promosi = select("SELECT id_promosi, periklanan, pemasaran_langsung, penju
 <table id="example2" class="table table-bordered table-hover">
 <?php
 // Membuat panggilan subproses untuk menjalankan skrip Python
-$command = "c:/xampp/htdocs/crm-amdk/regression_analysis.py";
+$command = "E:/xampp/htdocs/mdl525/regression_analysis.py";
 ob_start();
 passthru($command);
 $output = ob_get_clean();
@@ -97,10 +97,10 @@ echo "<pre>$output</pre>";
                                     <td><?= $promosi['penjualan']; ?></td>
                                     <td class="text-center" width="20%">
 
-                                        <a href="ubah-promosi.php?id_promosi=<?= $promosi['id_promosi']; ?>" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Ubah</a>
+                                        <a href="ubah-promosi.php?id_promosi=<?= $promosi['id_promosi']; ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Ubah</a>
 
                                        
-                                        <!-- <a href="hapus-promosi.php?id_promosi=<?= $promosi['id_promosi']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Data Promosi Akan Dihapus.?');"><i class="fas fa-trash-alt"></i> Hapus</a> -->
+                                        <a href="hapus-promosi.php?id_promosi=<?= $promosi['id_promosi']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Data Promosi Akan Dihapus.?');"><i class="fas fa-trash-alt"></i> Hapus</a>
                                         
                                     </td>
                                 </tr>
