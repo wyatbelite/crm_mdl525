@@ -216,11 +216,57 @@ function create_kritiksaran($post)
 {
     global $db;
 
-    $id_pelanggan   = strip_tags($post['id_pelanggan']);
+    // $id_pelanggan   = strip_tags($post['id_pelanggan']);
     $kritik         = strip_tags($post['kritik']);
     $saran          = strip_tags($post['saran']);
     // query tambah data
-    $query = "INSERT INTO tb_kritiksaran VALUES(null, '$id_pelanggan', '$kritik', '$saran')";
+    $query = "INSERT INTO tb_kritiksaran VALUES(null, null, '$kritik', '$saran')";
+
+    mysqli_query($db, $query);
+
+    return mysqli_affected_rows($db);
+}
+
+// fungsi menambah data produk
+function create_produk($post)
+{
+    global $db;
+
+    $gambar         = strip_tags($post['gambar']);
+    $nama_produk   = strip_tags($post['nama_produk']);
+    
+    // query tambah data
+    $query = "INSERT INTO tb_produk VALUES(null, '$gambar', '$nama_produk')";
+
+    mysqli_query($db, $query);
+
+    return mysqli_affected_rows($db);
+}
+
+// fungsi mengubah data produk
+function update_produk($post)
+{
+    global $db;
+
+    $id_produk         = strip_tags($post['id_produk']);
+    $gambar         = strip_tags($post['gambar']);
+    $nama_produk   = strip_tags($post['nama_produk']);
+
+    // query ubah data
+    $query = "UPDATE tb_produk SET gambar = '$gambar', nama_produk = '$nama_produk' WHERE id_produk = $id_produk";
+
+    mysqli_query($db, $query);
+
+    return mysqli_affected_rows($db);
+}
+
+// fungsi menghapus data produk
+function delete_produk($id_produk)
+{
+    global $db;
+
+    // query hapus data pelanggan
+    $query = "DELETE FROM tb_produk WHERE id_produk = $id_produk";
 
     mysqli_query($db, $query);
 

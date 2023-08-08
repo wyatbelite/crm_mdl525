@@ -92,6 +92,7 @@ include 'config/app.php';
                                 </a>
                             </li>
                         <?php endif; ?>
+                        
 
                         <?php if ($_SESSION['level'] == 1 or $_SESSION['level'] == 2) : ?>
                             <li class="nav-item">
@@ -104,9 +105,20 @@ include 'config/app.php';
                             </li>
                         <?php endif; ?>
 
+                        <?php if ($_SESSION['level'] == 1 or $_SESSION['level'] == 3) : ?>
+                            <li class="nav-item">
+                                <a href="produk.php" class="nav-link">
+                                    <i class="nav-icon fas fa-wallet"></i>
+                                    <p>
+                                        Data Produk
+                                    </p>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+
                         <!-- <?php if ($_SESSION['level'] == 1) : ?>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="produk.php" class="nav-link">
                                     <i class="nav-icon fas fa-list"></i>
                                     <p>
                                         Data Produk
@@ -136,6 +148,16 @@ include 'config/app.php';
                                 </a>
                             </li>
                         <?php endif; ?>
+                        <!-- <?php if ($_SESSION['level'] == 3) : ?>
+                            <li class="nav-item">
+                                <a href="produk.php" class="nav-link">
+                                    <i class="nav-icon fas fa-list"></i>
+                                    <p>
+                                        Produk
+                                    </p>
+                                </a>
+                            </li>
+                        <?php endif; ?> -->
 
                         <?php if ($_SESSION['level'] == 3) : ?>
                             <li class="nav-item">

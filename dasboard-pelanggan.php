@@ -5,7 +5,7 @@ session_start();
 // membatasi halaman sebelum login
 if (!isset($_SESSION["login"])) {
     echo "<script>
-            // alert('login dulu dong');
+            alert('login dulu dong');
             document.location.href = 'login.php';
           </script>";
     exit;
@@ -70,11 +70,11 @@ if (isset($_POST['tambah'])) {
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4">
-            <form>
-              <div class="mb-3">
+            <form method="post">
+              <!-- <div class="mb-3">
                 <label for="nama_pelanggan" class="form-label">Nama Pelanggan</label>
                 <input type="text" class="form-control" id="nama_pelanggan" name="nama_pelanggan" value="<?= $_SESSION['nama']; ?>" required>
-              </div>
+              </div> -->
               <div class="mb-3">
                 <label for="kritik" class="form-label">Kritik</label>
                 <input type="text" class="form-control" id="kritik" name="kritik" required>
